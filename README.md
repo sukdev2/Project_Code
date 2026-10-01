@@ -11,14 +11,9 @@ Numerical study of heavy dark matter capture, propagation, and thermalization in
 ## Overview
 
 This repository contains the **Python codes, numerical results, and analysis**
-developed during my M.Sc. research in Dark Matter Physics.
+developed during my M.Sc. research in Dark Matter Physics. The project studies the capture and subsequent evolution of heavy dark matter inside the Sun, with emphasis on **NR-EFT dark matter–nucleus interactions**, orbital evolution, and thermalization.
 
-The project studies the capture and subsequent evolution of heavy dark matter
-inside the Sun, with emphasis on **NR-EFT dark matter–nucleus interactions**,
-orbital evolution, and thermalization.
-
-The study focuses on the **TeV–PeV dark matter mass regime**, where energy loss
-per scattering can be small.
+The study focuses on the **TeV–PeV scale dark matter mass regime**, where energy loss per scattering can be small.
 
 ---
 
@@ -38,14 +33,17 @@ per scattering can be small.
 
 ## NR-EFT Operators
 
-The present study focuses on:
+The present study focuses on: spin-dependent interaction, velocity-dependent interaction, momentum- and velocity-dependent interaction.
 
-- $\hat{O}_4$ — spin-dependent interaction
-- $\hat{O}_8$ — velocity-dependent interaction
-- $\hat{O}_{15}$ — momentum- and velocity-dependent interaction
+$$\mathcal{\hat{O}}_4 = \mathbf{S}_\chi\cdot\mathbf{S}_N$$
 
-Different operators produce different scattering rates through their
-corresponding nuclear response functions.
+$$\mathcal{\hat{O}}_8 = \mathbf{S}_\chi\cdot\mathbf{v}^{\perp}$$
+
+$$\mathcal{\hat{O}}_{15} = -\left(
+\mathbf{S}_\chi\cdot\frac{\mathbf q}{m_N}
+\right) \left[\left(\mathbf S_N\times\mathbf v^\perp\right) \cdot \frac{\mathbf q}{m_N} \right]$$
+
+Different operators produce different scattering rates through their corresponding nuclear response functions.
 
 ---
 
@@ -56,9 +54,7 @@ The current implementation uses:
 - **BP2000**
 - **AGSS09**
 
-The solar-model data provide the radial profiles required for the capture
-calculation, including density, elemental abundances, enclosed mass, and
-escape velocity.
+The solar-model data provide the radial profiles required for the capture calculation, including density, elemental abundances, enclosed mass, and escape velocity.
 
 ---
 
@@ -70,30 +66,17 @@ The current capture calculation includes:
 - Iron (Fe)
 - Phosphorus (P)
 
-Individual capture rates are calculated for each element and combined to obtain
-the **total capture rate**.
+Individual capture rates are calculated for each element and combined to obtain the **total capture rate**.
 
 ---
 
 ## Data Sources
 
-The solar-model data used in this project are obtained from publicly available
-solar-neutrino research resources associated with **John N. Bahcall and
-collaborators**.
-
-The BP2000 solar-model data provide radial solar-model quantities including
-density and chemical composition, which are used in the present capture-rate
-calculation. The original data sources should be appropriately acknowledged when these data
-are reused or redistributed. The third-party solar-model data files are **not relicensed under the MIT
-License of this repository** and remain subject to the terms and conditions of
-their original source.
+The solar-model data used in this project are obtained from publicly available solar-neutrino research resources associated with **John N. Bahcall and collaborators**. The BP2000 solar-model data provide radial solar-model quantities including density and chemical composition, which are used in the present capture-rate calculation. 
 
 ---
 
 ## Capture Rate Calculation
-
-The current **capture-rate calculation is the completed and structured part of
-the repository**.
 
 It includes:
 
@@ -144,61 +127,17 @@ Results are stored separately for:
 
 ---
 
-## Key Research References
+## References
 
-The theoretical framework and numerical methodology of this project are
-primarily based on the following studies.
+1. R. Catena and B. Schwabe,  
+   *Form factors for dark matter capture by the Sun in effective theories*,  
+   JCAP 04 (2015) 042.  
+   [arXiv:1501.03729](https://arxiv.org/abs/1501.03729)
 
-### 1. NR-EFT Dark Matter Capture and Nuclear Response Functions
-
-**R. Catena and B. Schwabe**
-
-*"Form factors for dark matter capture by the Sun in effective theories,"*
-
-*Journal of Cosmology and Astroparticle Physics*, **04 (2015) 042**.
-
-[arXiv:1501.03729](https://arxiv.org/abs/1501.03729)
-
-DOI: [10.1088/1475-7516/2015/04/042](https://doi.org/10.1088/1475-7516/2015/04/042)
-
-This work provides the nuclear response functions and formalism used to study
-dark matter capture in the Sun within the non-relativistic effective theory
-framework. It considers isoscalar and isovector dark matter–nucleon
-interactions and calculates nuclear response functions for the elements
-relevant to the solar capture process.
-
-The present capture-rate calculation follows this theoretical framework, with
-the implementation adapted to the solar-model data and numerical setup used
-in this project.
-
-### 2. Dark Matter Propagation and Thermalization
-
-**A. Widmark**
-
-*"Thermalization time scales for WIMP capture by the Sun in effective theories,"*
-
-*Journal of Cosmology and Astroparticle Physics*, **05 (2017) 046**.
-
-[arXiv:1703.06878](https://arxiv.org/abs/1703.06878)
-
-DOI: [10.1088/1475-7516/2017/05/046](https://doi.org/10.1088/1475-7516/2017/05/046)
-
-This work provides the main methodological reference for the subsequent
-propagation, scattering, orbital evolution, and thermalization study of
-captured dark matter inside the Sun.
-
----
-
-## License
-
-The original Python code developed in this repository is released under the
-**MIT License**.
-
-Third-party data, software, and scientific publications are **not covered by
-this license** and remain subject to their respective original terms and
-conditions.
-
-See the `LICENSE` file for the complete MIT License text.
+2. A. Widmark,  
+   *Thermalization time scales for WIMP capture by the Sun in effective theories*,  
+   JCAP 05 (2017) 046.  
+   [arXiv:1703.06878](https://arxiv.org/abs/1703.06878)
 
 ---
 
