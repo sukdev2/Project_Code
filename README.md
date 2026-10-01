@@ -138,9 +138,5 @@ Results are stored separately for:
    [arXiv:1703.06878](https://arxiv.org/abs/1703.06878)
 
 ---
-The theoretical framework and nuclear response formalism are based primarily
-on the work of Catena and Schwabe, while the subsequent propagation and
-thermalization methodology is guided by Widmark.
-
-All scientific results and interpretations presented in this repository are
+The scientific results and interpretations presented in this repository are
 part of the ongoing research project.
