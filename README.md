@@ -138,13 +138,6 @@ Results are stored separately for:
    [arXiv:1703.06878](https://arxiv.org/abs/1703.06878)
 
 ---
-
-## Acknowledgements
-
-The solar-model data used in this project originate from publicly available
-solar-neutrino research resources associated with John N. Bahcall and
-collaborators.
-
 The theoretical framework and nuclear response formalism are based primarily
 on the work of Catena and Schwabe, while the subsequent propagation and
 thermalization methodology is guided by Widmark.
