@@ -40,8 +40,7 @@ Different operators produce different scattering rates through their correspondi
 
 The current implementation uses:
 
-- **BP2000**
-- **AGSS09**
+- **BS2005-AGS**
 
 The solar-model data provide the radial profiles required for the capture calculation, including density, elemental abundances, enclosed mass, and escape velocity.
 
@@ -51,17 +50,7 @@ The solar-model data provide the radial profiles required for the capture calcul
 
 The current capture calculation includes:
 
-- Hydrogen (H)
-- Iron (Fe)
-- Phosphorus (P)
-
-Individual capture rates are calculated for each element and combined to obtain the **total capture rate**.
-
----
-
-## Data Sources
-
-The solar-model data used in this project are obtained from publicly available solar-neutrino research resources associated with **John N. Bahcall and collaborators**. The BP2000 solar-model data provide radial solar-model quantities including density and chemical composition, which are used in the present capture-rate calculation. 
+- H, He3, He4, C12, N14, O16
 
 ---
 
@@ -80,20 +69,7 @@ It includes:
 - Element-by-element capture rates
 - Total capture rates
 
-The calculation is performed for:
-
-- $\hat{O}_4$
-- $\hat{O}_8$
-- $\hat{O}_{15}$
-
-with both **isoscalar** and **isovector** couplings.
-
-Results are stored separately for:
-
-- H
-- Fe
-- P
-- Total
+The calculation is performed for both **isoscalar** and **isovector** couplings.
 
 ---
 
