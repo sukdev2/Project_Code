@@ -1,17 +1,8 @@
-# Dark Matter Propagation in the Sun using Non-Relativistic Effective Field Theory (NR-EFT)
+# Non-equilibrium Thermalization of Heavy Dark Matter in the Sun and Neutrino Signals from Long-Lived Mediators
 
 [![Status](https://img.shields.io/badge/Status-Ongoing-yellow.svg)](#)
 
-Numerical study of heavy dark matter capture, propagation, and thermalization inside the Sun within the framework of **Non-Relativistic Effective Field Theory (NR-EFT)**.
-
----
-
-## Overview
-
-This repository contains the **Python codes, numerical results, and analysis**
-developed during my M.Sc. research in Dark Matter Physics. The project studies the capture and subsequent evolution of heavy dark matter inside the Sun, with emphasis on **NR-EFT dark matter–nucleus interactions**, orbital evolution, and thermalization.
-
-The study focuses on the **TeV–PeV scale dark matter mass regime**, where energy loss per scattering can be small.
+Numerical study of heavy dark matter capture, propagation, and thermalization inside the Sun.
 
 ---
 
